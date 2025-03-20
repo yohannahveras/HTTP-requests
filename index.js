@@ -15,6 +15,22 @@ app.get('/contact', (req, res) => {
   res.send('<h1>Contact</h1>')
 })
 
+app.post('/register', (req, res) => {
+  res.sendStatus(201)
+})
+
+app.put('/user/name', (req, res) => {
+  res.sendStatus(200)
+})
+
+app.patch('/user/name', (req, res) => {
+  res.sendStatus(200)
+})
+
+app.delete('/user/name', (req, res) => {
+  res.sendStatus(200)
+})
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
